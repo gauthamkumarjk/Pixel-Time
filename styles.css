@@ -1,0 +1,130 @@
+body {
+  background-color: #131313;
+  color: #ff1067;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.grad {
+  background: linear-gradient(90deg, #00ff66, #fe157a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} /* gradient text effect for the title and search input. 
+Yes, it works perfectly on the search input. */
+
+.halo {
+  top: -1rem; /* Positioning the halo image behind the title */
+  left: -3rem;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  height: 125%;
+  z-index: 1;
+}
+
+.logo {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5rem auto;
+  z-index: 2;
+
+  font-family: "Pixelify Sans", sans-serif;
+
+  -webkit-text-stroke: 0.13rem rgba(10, 10, 10, 0.4);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.tagline {
+  position: relative;
+  right: -2.5rem;        /* aligns to the right edge of the logo box */
+  bottom: 1.4rem;
+  color: #434343; /* Intentionally low contrast to make it less prominent than the title */
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 0 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, button {
+  height: 4rem;
+  font-size: 1.8rem;
+  background-color: #131313;
+  font-family: "Pixelify Sans", sans-serif;
+  border: 1px solid #202020;
+  padding: 0.16rem;
+}
+
+input{
+  width: min(22rem, 70vw);
+  padding: 0.5rem;
+}
+
+button {
+  width: 4rem;
+  margin-left: 0.5rem;
+}
+
+input:focus, button:focus {
+  outline: 0.075rem solid #f83656;
+}
+
+
+#results {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.result {
+  border: 1px solid #202020;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#results-count {
+  text-align: center;
+  color: #434343; 
+  font-family: "arial", sans-serif;
+  font-size: 0.8rem;
+}
+
+.result img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.result p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "pixelify sans", sans-serif;
+  color: #f83656;
+  overflow-wrap: anywhere;
+}
